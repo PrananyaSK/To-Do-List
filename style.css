@@ -1,0 +1,147 @@
+/* style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #333;
+}
+
+.container {
+    width: 450px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #4a154b;
+}
+
+.date-time {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    outline: none;
+}
+
+#addButton {
+    padding: 12px 20px;
+    background-color: #4a154b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#addButton:hover {
+    background-color: #380f39;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #f9f9f9;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.task-text {
+    flex-grow: 1;
+    word-break: break-all;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.action-buttons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.action-buttons button:hover {
+    color: #007bff;
+}
+
+.action-buttons .delete-button:hover {
+    color: #dc3545;
+}
+
+.action-buttons .complete-button:hover {
+    color: #28a745;
+}
+
+.task-time {
+    font-size: 0.8em;
+    color: #888;
+    margin-left: 5px;
+}
+
+.progress {
+    width: 100%;
+    background-color: #eee;
+    border-radius: 6px;
+    height: 20px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #4a154b;
+    border-radius: 6px;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+.progress-percent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 0.8em;
+}
